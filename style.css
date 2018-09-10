@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: #DDDDDD;
+}
+* {
+  box-sizing: border-box;
+}
+
+main {
+  text-align: center;
+  margin:75px 16px;
+}
+#nav {
+  display: inline-block;
+}
+#nav > .row{
+  margin: 20px;
+}
+
+#nav > .row > .kbd {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline-flex;
+  width: 72px;
+  height: 72px;
+  text-transform: uppercase;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  background: #000000;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-family: Helvetica;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+#nav > .row > .kbd > button {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+#nav > .row > .kbd:hover > button{
+  display: inline-block;
+}
+
+#nav > .row #tab,
+#nav > .row #delete{
+  width:130px;
+}
+#nav > .row #caps{
+  width: 140px;
+}
+#nav > .row #enter{
+  width: 143px;
+}
+#nav > .row #shift{
+  width: 183px;
+}
