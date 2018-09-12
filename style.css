@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-main {
+.key-wrapper {
   text-align: center;
   margin:75px 16px;
 }
@@ -18,13 +18,12 @@ main {
   margin: 20px;
 }
 
-#nav > .row > .kbd {
+#nav > .row > .li {
   border: 1px solid black;
   border-radius: 10px;
   display: inline-flex;
   width: 72px;
   height: 72px;
-  text-transform: uppercase;
   position: relative;
   justify-content: center;
   align-items: center;
@@ -35,26 +34,34 @@ main {
   font-family: Helvetica;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-#nav > .row > .kbd > button {
+#nav > .row > .li > button {
   position: absolute;
   right: 0;
   bottom: 0;
   display: none;
 }
-#nav > .row > .kbd:hover > button{
+#nav > .row > .li:hover > button{
   display: inline-block;
 }
 
 #nav > .row #tab,
 #nav > .row #delete{
   width:130px;
+  padding-top:4px;
+  font-size: 16px;
 }
 #nav > .row #caps{
   width: 140px;
+  padding-top:4px;
+  font-size: 16px;
 }
 #nav > .row #enter{
   width: 143px;
+  padding-top:4px;
+  font-size: 16px;
 }
 #nav > .row #shift{
   width: 183px;
+  padding-top:4px;
+  font-size: 16px;
 }

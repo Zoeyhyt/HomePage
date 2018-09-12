@@ -1,9 +1,10 @@
 let hash = [
-  ["~","1","2","3","4","5","6","7","8","9","0","-","+","delete"],
-  ["tab","q", "w", "e", "r", "t", "y", "u", "i", "o", "p","{","}","|"],
-  ["caps","a", "s", "d", "f", "g", "h", "j", "k", "l",":","\"","enter"],
-  ["shift","z", "x", "c", "v", "b", "n", "m","<",">","?","shift"]
+  ["~","1","2","3","4","5","6","7","8","9","0","-","=","delete"],
+  ["tab","Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P","{","}","|"],
+  ["caps","A", "S", "D", "F", "G", "H", "J", "K", "L",":","\"","return"],
+  ["shift","Z", "X", "C", "V", "B", "N", "M",",",".","/","shift"]
 ];
+let hash2 = [['`','!','@','#','$','%','^','&','*','(',')','_','+'],['[',']','|'],['lock','enter'],['<','>','?']];
 let webs = {};
 
 let websInLocalStorage = JSON.parse(localStorage.getItem("webs") || "null");
@@ -13,15 +14,15 @@ if (websInLocalStorage) {
 
 let index1 = 0;
 while (index1 < hash.length) {
-  let div1 = document.createElement("div");
-  div1.className = 'row'
+  let ol1 = document.createElement("ol");
+  ol1.className = 'row'
   let row = hash[index1];
   let index2 = 0;
   while (index2 < row.length) {
-    let kbd = document.createElement("kbd");
-    kbd.className = 'kbd'
-    kbd.id = row[index2]
-    kbd.textContent = row[index2];
+    let li1 = document.createElement("li");
+    li1.className = 'li'
+    li1.id = row[index2]
+    li1.textContent = row[index2];
     let button1 = document.createElement("button");
     button1.textContent = "编辑";
     button1.className = row[index2];
@@ -31,11 +32,11 @@ while (index1 < hash.length) {
       webs[key] = web;
       localStorage.setItem("webs", JSON.stringify(webs));
     };
-    kbd.appendChild(button1);
-    div1.appendChild(kbd);
+    li1.appendChild(button1);
+    ol1.appendChild(li1);
     index2 += 1;
   }
-  nav.appendChild(div1);
+  nav.appendChild(ol1);
   index1 += 1;
 }
 
