@@ -11,8 +11,9 @@
   text-align: center;
   margin:75px 16px;
 }
+
 #nav {
-  display: inline-block;
+
 }
 #nav > .row{
   margin: 20px;
@@ -55,7 +56,7 @@
   padding-top:4px;
   font-size: 16px;
 }
-#nav > .row #enter{
+#nav > .row #return{
   width: 143px;
   padding-top:4px;
   font-size: 16px;
