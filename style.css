@@ -79,6 +79,30 @@ ol,li{
   width: 183px;
   font-size: 16px;
 }
+#fn,#control,#option{
+  width:74px;
+  height: 82px;
+  font-size: 16px;
+}
+#space{
+  width: 404px;
+  height: 82px;
+  font-size: 16px;
+}
+#command{
+  width: 95px;
+  height: 82px;
+  font-size: 16px;
+}
+#➡,#⬇,#⬅,#⬆,#blank{
+  width: 72px;
+  height: 40px;
+  font-size: 16px;
+  margin: 1px 5px;
+}
+#blank{
+  visibility: hidden;
+}
 
 .li >.tab,
 .li >.caps{
@@ -91,7 +115,7 @@ ol,li{
 }
 .li >.delete{
   top: 19px;
-  left: 71px;
+  left: 73px;
 }
 .li >.return{
  top:19px;
@@ -103,8 +127,33 @@ ol,li{
 .li > .shift{
   left:13px;
 }
+.shift.right{
+  top: 19px;
+  left: 140px;
+}
 .li >.enter{
   font-size: 12px;
   top: -8px;
   left: 102px;
+}
+.li > .fn{
+  top: 32px;
+  left: 10px;
+}
+.li > .control,
+.li > .option,
+.li > .command{
+  top: 32px;
+  left: 10px;
+}
+.li > .space{
+  display: none;
+}
+.li >.➡,
+.li>.⬇,
+.li>.⬅,
+.li>.⬆{
+  font-size: 12px;
+  top: -9px;
+  left: 26px;
 }
