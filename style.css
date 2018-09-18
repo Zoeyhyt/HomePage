@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  background: #DDDDDD;
+ 
 }
 ol,li{
   list-style: none;
@@ -9,11 +9,18 @@ ol,li{
 * {
   box-sizing: border-box;
 }
-
+body{
+  height: 100vh;
+  background: url(./bg.jpg) no-repeat center center;
+}
 .key-wrapper {
   text-align: center;
-  margin:75px 16px;
-  width: 1230px;
+  margin:100px 10px 75px 47px;
+  padding: 50px 0;
+  height: 530px;
+  width: 1226px;
+  background: rgba(255,255,255,0.2);
+	border-radius: 10px;
 }
 
 .clearfix::after {
@@ -29,7 +36,7 @@ ol,li{
 .li {
   position: relative;
   margin: 0 5px;
-  background: #000000;
+  background: #000;
   cursor: pointer;
   border: 1px solid black;
   border-radius: 10px;
@@ -54,8 +61,8 @@ ol,li{
 
 .li > button {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 8px;
+  top: 8px;
   display: none;
   border-radius: 2px;
 }
@@ -104,56 +111,71 @@ ol,li{
   visibility: hidden;
 }
 
-.li >.tab,
-.li >.caps{
+.li >.spantab,
+.li >.spancaps{
   top: 19px;
   left: 13px;
 }
-.li >.lock{
+.li >.spanlock{
   top: 19px;
   left: 51px;;
 }
-.li >.delete{
+.li >.spandelete{
   top: 19px;
   left: 73px;
 }
-.li >.return{
+.li >.spanreturn{
  top:19px;
  left: 87px;
 }
-.li > .shift{
+.li > .spanshift{
   top: 19px;
-}
-.li > .shift{
   left:13px;
 }
-.shift.right{
+
+.spanshift.right{
   top: 19px;
   left: 140px;
 }
-.li >.enter{
+.li >.spanenter{
   font-size: 12px;
   top: -8px;
   left: 102px;
 }
-.li > .fn{
+.li > .spanfn{
   top: 32px;
   left: 10px;
 }
-.li > .control,
-.li > .option,
-.li > .command{
+.li > .spancontrol,
+.li > .spanoption,
+.li > .spancommand{
   top: 32px;
   left: 10px;
 }
-.li > .space{
+.li > .spanspace{
   display: none;
 }
-.li >.➡,
-.li>.⬇,
-.li>.⬅,
-.li>.⬆{
+.li >.span➡,
+.li>.span⬇,
+.li>.span⬅,
+.li>.span⬆{
   font-size: 12px;
   top: -9px;
   left: 26px;
+}
+.li >.span➡{
+  font-size: 14px;
+}
+
+.li >img{
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  left: 8px;
+  top: 8px;
+  display: none;
+  border-radius: 1px;
+}
+.li:hover >img{
+  display: inline-block;
 }
