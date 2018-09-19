@@ -1,38 +1,33 @@
 * {
   margin: 0;
   padding: 0;
- 
+  box-sizing: border-box;
 }
 ol,li{
   list-style: none;
-}
-* {
-  box-sizing: border-box;
 }
 body{
   height: 100vh;
   background: url(./bg.jpg) no-repeat center center;
 }
-.key-wrapper {
-  text-align: center;
-  margin:100px 10px 75px 47px;
-  padding: 50px 0;
-  height: 530px;
-  width: 1226px;
-  background: rgba(255,255,255,0.2);
-	border-radius: 10px;
-}
-
 .clearfix::after {
   content: '';
   display: block;
   clear: both;
 }
+.key-wrapper {
+  text-align: center;
+  margin:100px 10px 75px 47px;
+  padding: 50px 9px;
+  height: 530px;
+  width: 1245px;
+  background: rgba(255,255,255,0.2);
+	border-radius: 10px;
+}
 .row{
   margin: 10px;
   white-space: nowrap;
 }
-
 .li {
   position: relative;
   margin: 0 5px;
@@ -48,17 +43,6 @@ body{
   float: left;
   font-size: 22px;
 }
-
-.li > span{
-  width: 20px;
-  color: #FFFFFF;
-  font-family: Helvetica;
-  background: transparent;
-  position: absolute;
-  left: 26px;
-  top: 6px;
-}
-
 .li > button {
   position: absolute;
   right: 8px;
@@ -69,7 +53,15 @@ body{
 .li:hover > button{
   display: inline-block;
 }
-
+.li > span{
+  width: 20px;
+  color: #FFFFFF;
+  font-family: Helvetica;
+  background: transparent;
+  position: absolute;
+  left: 26px;
+  top: 6px;
+}
 #tab,#delete{
   width: 130px;
   font-size: 16px;
@@ -166,7 +158,6 @@ body{
 .li >.span➡{
   font-size: 14px;
 }
-
 .li >img{
   position: absolute;
   width: 13px;
